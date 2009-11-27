@@ -128,7 +128,7 @@
 			}
 		}
 
-		private static function show():void 
+		public static function show():void 
 		{
 			ci.caption = "Hide Profiler";
 			displayed = true;
@@ -137,7 +137,7 @@
 			updateDisplay();
 		}
 
-		private static function hide():void 
+		public static function hide():void 
 		{
 			ci.caption = "Show Profiler";
 			displayed = false;
@@ -355,7 +355,7 @@ internal class ProfilerContent extends Sprite
 		var vec:Graphics = box.graphics;
 		vec.clear();
 		
-		vec.beginFill(0x000000, 0.5);
+		vec.beginFill(0x000000, 0.8);
 		vec.drawRect(0, 0, stage.stageWidth, 120);
 		vec.lineStyle(1, 0xFFFFFF, 0.2);
 			

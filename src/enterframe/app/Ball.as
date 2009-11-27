@@ -21,7 +21,7 @@ package enterframe.app
 		
 		public function Ball(ticker:EnterFrameTicker)
 		{
-			graphics.beginFill(COLORS[int(Math.random() * COLORS.length)]);
+			graphics.beginFill(COLORS[int(Math.random() * COLORS.length)], 0.4);
 			graphics.drawCircle(0, 0, 5);
 			graphics.endFill();
 			
