@@ -9,10 +9,6 @@ package enterframe
 	import flash.text.TextFormat;
 
 	/**
-	 * 
-	 * 
-	 * (c) 2009 alecmce.com
-	 *
 	 * @author Alec McEachran
 	 */
 	public class EnterFrameMain extends Sprite 

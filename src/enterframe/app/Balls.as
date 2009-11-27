@@ -5,10 +5,6 @@ package enterframe.app
 	import flash.display.Sprite;
 
 	/**
-	 * 
-	 * 
-	 * (c) 2009 alecmce.com
-	 *
 	 * @author Alec McEachran
 	 */
 	public class Balls extends Sprite
