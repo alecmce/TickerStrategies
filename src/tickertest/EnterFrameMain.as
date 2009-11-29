@@ -29,6 +29,7 @@ package tickertest
 			addChild(new Balls(ticker));
 			
 			SWFProfiler.init(stage, this);
+			SWFProfiler.stop();
 			SWFProfiler.show();
 			
 			var tf:TextField = new TextField();
