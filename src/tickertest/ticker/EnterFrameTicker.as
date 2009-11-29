@@ -4,10 +4,6 @@ package tickertest.ticker
 	import flash.events.Event;
 
 	/**
-	 * 
-	 * 
-	 * (c) 2009 alecmce.com
-	 *
 	 * @author Alec McEachran
 	 */
 	public class EnterFrameTicker implements Ticker
@@ -27,7 +23,8 @@ package tickertest.ticker
 		
 		public function start():void
 		{
-			stage.addEventListener(Event.ENTER_FRAME, onEnterFrame);		}
+			stage.addEventListener(Event.ENTER_FRAME, onEnterFrame);
+		}
 		
 		public function stop():void
 		{

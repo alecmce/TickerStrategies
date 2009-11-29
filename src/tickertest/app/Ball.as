@@ -5,10 +5,6 @@ package tickertest.app
 	import flash.display.Shape;
 
 	/**
-	 * 
-	 * 
-	 * (c) 2009 alecmce.com
-	 *
 	 * @author Alec McEachran
 	 */
 	public class Ball extends Shape
