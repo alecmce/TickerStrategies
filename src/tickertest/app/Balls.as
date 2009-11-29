@@ -1,6 +1,6 @@
-package enterframe.app 
+package tickertest.app 
 {
-	import enterframe.EnterFrameTicker;
+	import tickertest.ticker.Ticker;
 
 	import flash.display.Sprite;
 
@@ -9,9 +9,9 @@ package enterframe.app
 	 */
 	public class Balls extends Sprite
 	{
-		private const COUNT:int = 2500;
+		private const COUNT:int = 5000;
 		
-		public function Balls(ticker:EnterFrameTicker)
+		public function Balls(ticker:Ticker)
 		{
 			var i:int = COUNT;
 			while (--i > -1)

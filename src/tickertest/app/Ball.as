@@ -1,10 +1,14 @@
-package enterframe.app 
+package tickertest.app 
 {
-	import enterframe.EnterFrameTicker;
+	import tickertest.ticker.Ticker;
 
 	import flash.display.Shape;
 
 	/**
+	 * 
+	 * 
+	 * (c) 2009 alecmce.com
+	 *
 	 * @author Alec McEachran
 	 */
 	public class Ball extends Shape
@@ -15,7 +19,7 @@ package enterframe.app
 		
 		public var j:Number;
 		
-		public function Ball(ticker:EnterFrameTicker)
+		public function Ball(ticker:Ticker)
 		{
 			graphics.beginFill(COLORS[int(Math.random() * COLORS.length)], 0.4);
 			graphics.drawCircle(0, 0, 5);
@@ -23,7 +27,6 @@ package enterframe.app
 			
 			x = Math.random() * 550;
 			y = Math.random() * 380 + 20;
-			
 			i = 0;
 			j = 0;
 			
