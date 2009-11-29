@@ -1,26 +1,33 @@
 package tickertest
 {
 	import tickertest.app.Balls;
+	import tickertest.ticker.FrameLoopTicker;
 	import tickertest.ticker.Ticker;
 
 	import com.flashdynamix.utils.SWFProfiler;
 
-	import flash.display.Sprite;
+	import flash.display.MovieClip;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
 	import flash.text.TextFormat;
 
 	/**
+	 * For the FrameLoopTicker to work, this main class must have a two-frame
+	 * timeline. You can force this by adding the following command to the MXML
+	 * compiler:
+	 * 
+	 * -frames.frame 1 flash.display.Sprite
+	 * 
 	 * @author Alec McEachran
 	 */
-	[Frame(factoryClass="tickertest.ticker.FrameLoopTicker")]
-	public class FrameLoopMain extends Sprite 
+	public class FrameLoopMain extends MovieClip 
 	{
 		public var ticker:Ticker;
 		
-		public function init():void
+		public function FrameLoopMain():void
 		{
+			ticker = new FrameLoopTicker(this);
 			ticker.stop();
 			
 			initDemo();
